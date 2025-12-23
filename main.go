@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/jcblastor/rest_go/pkg/storage"
+)
 
 func main() {
-	fmt.Println("Probando")
+	storage.NewPostgresDB()
 }
